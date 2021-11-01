@@ -1,9 +1,12 @@
 import express from "express";
-import bodyParser from "body-parser";
+import cors from "cors";
 import { randomBytes } from "crypto";
 
 const app = express();
-app.use(bodyParser.json());
+
+app.use(express.json()); //? check this one
+app.use(express.urlencoded()); //? check this one
+app.use(cors());
 
 const posts = {};
 
@@ -24,5 +27,5 @@ app.post("/posts", (req, res) => {
 });
 
 app.listen(4000, () => {
-  console.log("listening on 4000");
+  console.log("Connected to: 4000");
 });
