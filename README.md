@@ -1,2 +1,2 @@
 # microservice-react-node
- Microservices with React and Node Course
+experimenting with microservices using NodeJS and React
