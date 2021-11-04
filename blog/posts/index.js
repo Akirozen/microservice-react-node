@@ -46,5 +46,5 @@ app.post("/events", (req, res) => {
 });
 
 app.listen(4000, () => {
-  console.log("Connected to: 4000");
+  console.log("Post online on: 4000");
 });
